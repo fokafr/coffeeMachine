@@ -1,8 +1,24 @@
 package com.business;
 
 public class DrinkDesc {
+    public DrinkDesc(String name) {
+        this.name = name;
+    }
+
     private String name;
     private double price;
+    private boolean isHot;
+
+
+    public void setHot(boolean hot) {
+        isHot = hot;
+    }
+
+
+    public boolean isHot() {
+        return isHot;
+    }
+
 
     public DrinkDesc(String name, double price) {
         this.name = name;
